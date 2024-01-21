@@ -31,7 +31,6 @@ def create_book_report(path, num_words, letter_count):
 
     letter_list = list(letter_count.items())
     letter_list = sorted(letter_list, key=lambda letter : letter[1], reverse = True)
-    #print(letter_list[1][1])
     for letter in letter_list:
         if letter[0].isalpha():
             print(f"The '{letter[0]}' character was found {letter[1]} times")
